@@ -1,4 +1,4 @@
-# jFont-Checker
+# jFont Checker
 This simple tool checks for the existence of a specified font. It ultilizes the font fallback mechanism in CSS for font checking.
 
 ##Usage
