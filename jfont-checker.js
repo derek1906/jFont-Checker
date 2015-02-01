@@ -14,7 +14,7 @@
 *  
 **/
 (function(){
-	var containerA, containerB, html = document.documentElement,
+	var containerA, containerB, html = document.getElementsByTagName("html")[0],
 		filler = "random_words_#_!@#$^&*()_+mdvejreu_RANDOM_WORDS";
 
 	function createContainers(){
