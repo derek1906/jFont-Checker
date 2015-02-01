@@ -14,7 +14,7 @@
 *  
 **/
 (function(){
-	var containerA, containerB, body = document.body,
+	var containerA, containerB, html = document.documentElement,
 		filler = "random_words_#_!@#$^&*()_+mdvejreu_RANDOM_WORDS";
 
 	function createContainers(){
@@ -58,8 +58,8 @@
 
 		font = font.replace(reg, "");
 
-		body.appendChild(containerA);
-		body.appendChild(containerB);
+		html.appendChild(containerA);
+		html.appendChild(containerB);
 
 		//First Check
 		containerA.style.fontFamily = font + ",monospace";

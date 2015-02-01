@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<script src="../jfont-checker.js"></script>
+		<script>
+			var testCases = [
+				//Web safe fonts
+				"Arial",
+				"Helvetica",
+				"Impact",
+
+				//Intentionally mispelled
+				"Aril",
+				"Hellvetica",
+				"Inpact",
+
+				//Font names with spaces
+				"Lucida Console",
+				"Courier New",
+				"Comic Sans MS",
+
+				//Special cases
+				"Arial",
+				"monospace"
+			];
+
+			for(var i = 0, testee; i < testCases.length; i++){
+				testee = testCases[i];
+				var available = checkfont(testee);
+				console.log(testee + ": " + available);
+			}
+		</script>
+	</head>
+	<body></body>
+</html>
