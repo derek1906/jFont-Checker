@@ -51,15 +51,18 @@
 			   containerA.offsetHeight === containerB.offsetHeight;
 	}
 
-	function checkfont(font){
+	function checkfont(font, DOM){
+		var rootEle = html;
+		if(DOM && DOM.children && DOM.children.length) rootEle = DOM.children[0];
+
 		var result = null,
 			reg = /[\,\.\/\;\'\[\]\`\<\>\\\?\:\"\{\}\|\~\!\@\#\$\%\^\&\*\(\)\-\=\_\+]/g,
 			cleanUp = createContainers();
 
 		font = font.replace(reg, "");
 
-		html.appendChild(containerA);
-		html.appendChild(containerB);
+		rootEle.appendChild(containerA);
+		rootEle.appendChild(containerB);
 
 		//First Check
 		containerA.style.fontFamily = font + ",monospace";
