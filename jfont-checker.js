@@ -21,8 +21,8 @@
 		containerA = document.createElement("span");
 		containerB = document.createElement("span");
 
-		containerA.innerText = filler;
-		containerB.innerText = filler;
+		containerA.textContent = filler;
+		containerB.textContent = filler;
 
 		var styles = {
 			margin: "0",
