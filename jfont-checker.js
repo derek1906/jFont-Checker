@@ -3,13 +3,13 @@
 *  JFont Checker
 *  Derek Leung
 *  Original Date: 2010.8.23
-*  Current: Jan, 2015
+*  Current: Feb 2016
 *  
 *  This piece of code checks for the existence of a specified font.
 *  It ultilizes the font fallback mechanism in CSS for font checking.
 *  
 *  Compatibility:
-*  Tested on Chrome, Firefox, IE6+
+*  Tested on Chrome, Firefox, IE9+
 *  Requires CSS and JS
 *  
 **/
